@@ -3,16 +3,14 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un array
   // Tu código:
-  const numeros = [1, 2, 3, 4, 5, 6]
-   numeros [0]
+  return array [0]
   
 }
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-  const numeros = [1, 2, 3, 4, 5, 6]
-   return numeros.length-1
+ return array [array.length -1]
   
 }
 
@@ -27,7 +25,7 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  var nuevoArray [1, 2, 3, 4;]
+  var nuevoArray [ ];4
    for (var i = 0; i <array.length; i++;){
      nuevoArray [i] = array [i]+1
    }
@@ -38,8 +36,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  const nombres = ["Facundo", "Lautaro", "Ludmila"]
-  nombres [3] = "Roberta"
+  array [array.length] = elemento
+   return array;
   
 }
 
@@ -48,9 +46,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
-  const nombres2 = ["Facundo", "Lautaro", "Ludmila"]
-   nombres2.unshift ("Roberta")
-    return nombres2
+  array.unshift(elemento);
+   return array;
 }
 
 function dePalabrasAFrase(palabras) {
@@ -59,11 +56,8 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  const nuevo = {
-    decirHola : function(){
-      console.log ("Hola a todos")
-    }
-  }
+  return palabras.join ("")
+
 }
 
 
@@ -71,7 +65,7 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  for (var i = 0; i <array.lengthe; i++){
+  for (var i = 0; i <array.length; i++){
    if (array [i] === elemento) {
      return true
    }
@@ -101,7 +95,7 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-  var maximo = numeros[20];
+  var maximo = numeros[0];
   for(var i = 1; i < numeros.length; i++) {
     if(numeros[i] > maximo) { 
       maximo = numeros[i];
